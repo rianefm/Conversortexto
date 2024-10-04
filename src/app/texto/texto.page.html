@@ -1,0 +1,14 @@
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <ion-item>
+      <ion-label position="stacked">Texto para traduzir</ion-label>
+      <div class="input-container">
+        <ion-input [(ngModel)]="inputText" class="text-input"></ion-input>
+      </div>
+    </ion-item>
+
+    <ion-button class="small-button" (click)="translate(inputText)">Traduzir</ion-button>
+    <ion-label>{{ translatedText }}</ion-label>
+    <ion-button [routerLink]="['/home']">Voltar</ion-button>
+  </div>
+</ion-content>

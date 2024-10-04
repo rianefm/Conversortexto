@@ -1,0 +1,13 @@
+{
+  "name": "texto-conversor",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "proxies": [
+    {
+      "path": "/api/translate",
+      "proxyUrl": "http://localhost:3000/api"
+    }
+  ]
+}
